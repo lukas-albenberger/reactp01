@@ -1,38 +1,107 @@
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background: url('https://source.unsplash.com/collection/1408037/1600x900') no-repeat center / cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 400px;
+  min-height: 364px;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0px 10px #111;
+  mix-blend-mode: difference;
+  user-select: none;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 16px;
+      margin-right: 0.5rem;
+    }
+  }
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  text-align: center;
+  margin: 2.5rem 0;
+
+  .weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .weather-icon {
+    width: 128px;
+  }
+
+  .description {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    font-weight: normal;
+  }
+  
+
+  .temp-main {
+
+    .temperature {font-size: 6rem;}
+
+    .hi-lo {
+      display: flex;
+      justify-content: center;
+
+      > * {margin: 0 0.5rem;}
+    }
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  .weather-prop {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 20px;
+      margin-right: 0.8rem;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.btn-main {
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  background: transparent;
+  color: #fff;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: fit-content;
+  margin: calc(50% - 31px) auto 0 auto;
+  transition: all 200ms ease;
+}
+
+.status-message {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
 }
