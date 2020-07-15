@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css'
 import keys from "./keys";
+import NavBar from "./NavBar";
 
 import { WeatherData } from './components/WeatherData';
 import { StatusData } from './components/StatusData';
@@ -123,9 +124,11 @@ onClick = () => {
 
 render() {
   return (
-    <div className='App'>
-      <div className='container'>
-        {this.returnActiveView(this.state.status)}
+    <div><NavBar />
+      <div className='App'>
+        <div className='container'>
+          {this.returnActiveView(this.state.status)}
+        </div>
       </div>
     </div>
   );
