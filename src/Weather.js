@@ -1,9 +1,9 @@
-import React from "react";
-import keys from "./keys";
-import "./App.css";
+import React from "react"
+import keys from "./keys"
+import "./App.css"
 
-import { WeatherData } from './components/WeatherData';
-import { StatusData } from './components/StatusData';
+import { WeatherData } from './components/WeatherData'
+import { StatusData } from './components/StatusData'
 
 const api = {
     key: keys.API_KEY,

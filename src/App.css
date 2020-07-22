@@ -67,7 +67,7 @@ main {
   }
 }
 
-footer {
+foot {
   display: flex;
   justify-content: space-between;
 
@@ -152,4 +152,13 @@ button {
   li {
     padding: 0 15px;
   }
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
 }

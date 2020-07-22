@@ -34,7 +34,7 @@ export const WeatherData = ({ data }) => {
                     </div>
                 </div>
             </main>
-            <footer>
+            <foot>
                 <div className='weather-prop'>
                     <img src={require('../img/wind.png')} alt=''/>
                     <h4>{DegreesToDirection(deg)} {speed} KPH</h4>
@@ -43,7 +43,7 @@ export const WeatherData = ({ data }) => {
                     <img src={require('../img/drop.png')} alt=''/>
                     <h4>{humidity}%</h4>
                 </div>
-            </footer>
+            </foot>
         </>
     );
 }
